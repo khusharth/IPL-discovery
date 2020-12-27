@@ -5,6 +5,18 @@
     box-sizing: inherit;
 }
 
+// COLOR Pallet
+$primary-color-light-1: #ecfdf5;
+$primary-color-light-2: #d1fae5;
+$primary-color-light-3: #a7f3d0;
+$primary-color-light-4: #6ee7b7;
+$primary-color-light-5: #34d399;
+$primary-color-dark-1: #10b981;
+$primary-color-dark-2: #059669;
+$primary-color-dark-3: #047857;
+$primary-color-dark-4: #065f46;
+$primary-color-dark-5: #064e3b;
+
 html {
     // 1rem = 62.5% of 16px = 10px
     font-size: 62.5%;
@@ -14,4 +26,19 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background: $primary-color-light-4;
+}
+
+.header {
+    padding: 2.5rem;
+    text-align: center;
+
+    &__title {
+        font-size: 3.5rem;
+    }
+
+    &__img {
+        margin-right: 1rem;
+    }
 }
