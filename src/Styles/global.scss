@@ -16,6 +16,10 @@ $primary-color-dark-2: #059669;
 $primary-color-dark-3: #047857;
 $primary-color-dark-4: #065f46;
 $primary-color-dark-5: #064e3b;
+$primary-color-dark-6: #053e2f;
+$color-black: #000;
+$color-text: #333;
+$color-white: #fafafa;
 
 html {
     // 1rem = 62.5% of 16px = 10px
@@ -30,15 +34,167 @@ body {
     background: $primary-color-light-4;
 }
 
+// HEADER
 .header {
     padding: 2.5rem;
     text-align: center;
 
     &__title {
         font-size: 3.5rem;
+        color: $primary-color-dark-6;
     }
 
     &__img {
         margin-right: 1rem;
+    }
+}
+
+// SEARCH BAR
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__input {
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        border: none;
+        background-color: $color-white;
+        border-bottom: 3px solid transparent;
+        flex: 0 0 30%;
+        color: $color-text;
+        outline: none;
+        margin-right: 1rem;
+        transition: all 0.3s;
+
+        @media only screen and (max-width: 900px) {
+            flex: 0 0 80%;
+        }
+
+        &:focus {
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        }
+    }
+}
+
+.filter {
+    &__attribute {
+        flex: 0 0 15%;
+        margin-right: 1rem;
+
+        @media only screen and (max-width: 900px) {
+            flex: 0 0 80%;
+
+            &:first-of-type {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    &__equal-sign {
+        margin-right: 1rem;
+        @media only screen and (max-width: 900px) {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// MATCH
+.match {
+    &__container {
+        max-width: 100rem;
+        margin: 5rem auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 1050px) {
+            margin: 5rem 0 5rem 3rem;
+        }
+    }
+
+    &__card {
+        flex-grow: 1;
+        padding: 2rem;
+        background-color: $color-white;
+        width: 30rem;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        border-radius: 5px;
+        box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+
+        &:hover {
+            -webkit-transform: scale(1.01);
+            transform: scale(1.02);
+        }
+
+        & h4 {
+            text-align: center;
+            color: $primary-color-dark-5;
+        }
+    }
+
+    &__teams-container {
+        margin-bottom: 0.5rem;
+    }
+
+    &__vs-container {
+        padding-top: 0.5rem;
+
+        & span {
+            margin-right: 0.6rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__team-icon {
+        display: inline-block;
+        height: 2rem;
+    }
+
+    &__divider {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    &__winner-container {
+        padding: 1rem 0;
+    }
+
+    &__winner {
+        color: $primary-color-dark-6;
+        font-weight: 500;
+    }
+
+    &__toss-details,
+    &__details {
+        list-style: none;
+        padding: 1rem 0;
+
+        & h4 {
+            color: $primary-color-dark-6;
+        }
+
+        & span {
+            color: $primary-color-dark-6;
+            font-weight: 500;
+        }
+    }
+}
+
+// ERROR
+.error {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__message {
+        margin-left: 1rem;
     }
 }
