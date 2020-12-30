@@ -67,9 +67,14 @@ const SearchContainer = ({
     setAttributeValue,
 }) => {
     const [attributeValueOptions, setAttrValueOptions] = useState([]);
+    const [isInputDisabled, setIsInputDisabled] = useState(false);
 
     useEffect(() => {
-        console.log("called");
+        // Disabld search if attribute filter is used
+        attribute && attribute.value !== "all"
+            ? setIsInputDisabled(true)
+            : setIsInputDisabled(false);
+
         setOptions(attribute.value, setAttrValueOptions, setAttributeValue);
     }, [attribute]);
 
@@ -82,6 +87,7 @@ const SearchContainer = ({
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 placeholder='Search by team name or city'
+                disabled={isInputDisabled}
             />
             <Select
                 className='filter__attribute'

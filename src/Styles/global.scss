@@ -20,6 +20,7 @@ $primary-color-dark-6: #053e2f;
 $color-black: #000;
 $color-text: #333;
 $color-white: #fafafa;
+$color-white-disabled: #dddddd;
 
 html {
     // 1rem = 62.5% of 16px = 10px
@@ -75,6 +76,10 @@ body {
 
         &:focus {
             box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        }
+
+        &:disabled {
+            background-color: $color-white-disabled;
         }
     }
 }

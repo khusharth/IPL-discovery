@@ -26,7 +26,7 @@ const MatchesContainer = ({ searchText, attribute, attributeValue }) => {
     }
 
     // Filter
-    if (attribute.value !== "all") {
+    if (attribute) {
         matches = filterByAttribute(
             matchesData.slice(0, 30),
             attribute.value,
