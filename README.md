@@ -8,6 +8,7 @@ Search and filter about different IPL matches.
 ![sass](https://img.shields.io/badge/styling-sass-ff69b4?style=flat&logo=sass)
 
 -   [React](https://reactjs.org/)
+-   [React Select](https://react-select.com/home)
 -   [Sass](https://sass-lang.com/)
 
 ## :hatching_chick: Prerequisites
