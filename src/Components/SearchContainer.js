@@ -76,6 +76,7 @@ const SearchContainer = ({
             : setIsInputDisabled(false);
 
         setOptions(attribute.value, setAttrValueOptions, setAttributeValue);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [attribute]);
 
     return (

@@ -84,14 +84,18 @@ const MatchCard = ({ matchData }) => {
                     <span>Venue: </span>
                     {venue}
                 </li>
-                <li>
-                    <span>Umpire 1: </span>
-                    {umpire1}
-                </li>
-                <li>
-                    <span>Umpire 2: </span>
-                    {umpire2}
-                </li>
+                {umpire1 && (
+                    <li>
+                        <span>Umpire 1: </span>
+                        {umpire1}
+                    </li>
+                )}
+                {umpire2 && (
+                    <li>
+                        <span>Umpire 2: </span>
+                        {umpire2}
+                    </li>
+                )}
             </ul>
         </article>
     );
