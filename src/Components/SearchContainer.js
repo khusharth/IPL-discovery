@@ -96,7 +96,7 @@ const SearchContainer = ({
                 onChange={setAttribute}
                 options={attributeOptions}
                 styles={customStyles}
-                placeholder='Filter By Attribute'
+                placeholder='Filter matches by'
             />
 
             <span className='filter__equal-sign'>=</span>
