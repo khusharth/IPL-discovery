@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 🔍 IPL Discovery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Search and filter about different IPL matches.
 
-## Available Scripts
+## :man_technologist: Technology Stack
 
-In the project directory, you can run:
+![react](https://img.shields.io/badge/frontend-react-61dafb?style=flat&logo=React)
+![sass](https://img.shields.io/badge/styling-sass-ff69b4?style=flat&logo=sass)
 
-### `yarn start`
+-   [React](https://reactjs.org/)
+-   [Sass](https://sass-lang.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :hatching_chick: Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   [node](https://nodejs.org/en/) >= 12.18.0
+-   npm >= 6.14.4
 
-### `yarn test`
+## :zap: Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone / Download [this](https://github.com/khusharth/IPL-discovery) repo.
+2. Inside the project open a terminal and run:
 
-### `yarn build`
+    ```
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    This will install all the project dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. To start the development server run:
+    ```
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :cyclone: Page load speed
 
-### `yarn eject`
+The Tool used to calculate page load time: [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### :exclamation: Before Optimizing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Desktop Page load time:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Desktop old](./src/Assets/images/desk-old.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Mobile Page load time:
 
-## Learn More
+![Mobile old](./src/Assets/images/mob-old.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### :sparkles: After Optimizing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For optimizing I removed the render-blocking resource which was google fonts in my case and instead of using fonts from google fonts I downloaded them.
 
-### Code Splitting
+### Desktop Page load time:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Desktop old](./src/Assets/images/desk-new.png)
 
-### Analyzing the Bundle Size
+### Mobile Page load time:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Mobile old](./src/Assets/images/mob-new.png)
 
-### Making a Progressive Web App
+-   **Desktop Page Load time:** 0.1 seconds were reduced.
+-   **Mobile Page load time:** 0.7 seconds were reduced.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## :man_in_tuxedo: Author
 
-### Advanced Configuration
+[![Twitter](https://img.shields.io/badge/follow-%40khusharth19-1DA1F2?style=flat&logo=Twitter)](https://twitter.com/khusharth19)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/connect-%40khusharthpatani-%230077B5?style=flat&logo=LinkedIn)](https://www.linkedin.com/in/khusharth/)
